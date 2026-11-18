@@ -1,10 +1,17 @@
-
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './App.css'
 
 function App() {
-  // Counter state
   const [count, setCount] = useState(0)
+  const [message, setMessage] = useState("")
+
+  useEffect(() => {
+    if (count !== 0) {
+      setMessage("Component ReRendered")
+    }
+  }, [count])
+
+
 
   return (
     <main className="profile-container">
@@ -16,6 +23,7 @@ function App() {
         <p className="welcome">WELCOME TO MY SPACE</p>
         <h1>My Profile</h1>
         <h2>Waleeja Atif</h2>
+
         <p className="subtitle">BS Computer Science Student</p>
 
         <div className="header-tags">
@@ -100,6 +108,9 @@ function App() {
             Decrement -
           </button>
         </div>
+
+        {/* Re-render Message */}
+        <p className="effect-message">{message}</p>
       </section>
 
       {/* Footer */}

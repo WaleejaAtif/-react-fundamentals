@@ -32,7 +32,7 @@ body {
   text-align: left;
   padding: 55px 60px;
   border-radius: 24px;
-  background: #b4a0a0;
+  background: #c78bb3;
   border: 1px solid #e9eaf2;
   box-shadow: 0 12px 40px rgba(30, 35, 65, 0.05);
 }
@@ -57,7 +57,7 @@ body {
   margin: 0 0 25px;
   border-radius: 22px;
   background: #7554a6;
-  color: #b19c9c;
+  color: #b08fab;
   font-family: 'Manrope', sans-serif;
   font-size: 36px;
   font-weight: 800;
@@ -68,7 +68,7 @@ body {
 }
 
 .welcome {
-  color: #8568b0;
+  color: #fbbbec;
   font-size: 11px;
   font-weight: 800;
   letter-spacing: 2.5px;
@@ -114,7 +114,7 @@ body {
 .header-tags span {
   padding: 9px 15px;
   border-radius: 8px;
-  background: #9e96a9;
+  background: #c687bd;
   color: #7554a6;
   font-size: 12px;
   font-weight: 700;
@@ -389,4 +389,11 @@ body {
     flex: 1;
     padding: 13px 12px;
   }
+}
+.effect-message {
+  color: #5E17EB;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
 }
